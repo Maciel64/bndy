@@ -1,0 +1,10 @@
+POST http://localhost:3000/local/desafio
+Content-Type: application/json
+
+{
+  "query": "mutation($email: String!, $password: String!) { login(email: $email, password: $password) { id name email company password } }",
+  "variables": {
+    "email": "desafio@bondy.com.br",
+    "password": "123456"
+  }
+}
